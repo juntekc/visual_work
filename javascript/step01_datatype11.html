@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sterp06_datatype8.html</title>
+</head>
+<body>
+    <h1>자바스크립트 데이터</h1>
+    <p>fucntion type의 영역</p>
+
+    <script>
+        //페이지 로딩 시점에 실행되는 이영역은 global 영역입니다,
+        //global영역에 정의된 자원들은 어디에서나 사용가능합니다.
+        let myName="김구라";
+
+        function test(){
+            //함수의 중괄호안에 속한 이영역은 local영역입니다.
+            //local영역 안에 정의된 자원들은 해당 local영역 안에서만 사용 ㄱㄴ
+           //콜 되었을때 해석이 됌.콜할때마다 새로 만들어짐
+            let yourName="해골";
+            console.log(yourName);
+        }//함수안에서 yourname을 호출하면 안됌,바깥에서 안은 안됌 .
+        function test2(){
+            //local영역 안에서 바깥영역에 정의된 자원들을 사용할 수 있습니다.
+            //콜 되었을때
+            console.log(myName);
+            
+        
+        }
+
+
+
+        function rice (food1 , food2){
+            return (food1+"은"+food2+"보다 맛있다.");//return을 하면 다 끝남
+        }rice_1 = rice("라면","밥");
+        console.log(rice_1);
+        
+        
+        
+        
+        function sum (num1 , num2){
+            return num1 + num2;//return을 하면 다 끝남
+        }
+        const sum_result_1 = sum(30,20);
+        console.log(sum_result_1);
+        //미리 준비된 함수
+        //let useFunc = fucntion(f)
+            //매개변수로 전달된 값이 function type이라는 
+            //가정하에 사용되는 함수 
+       // };
+        useFunc(function(){
+            console.log("하나");
+            console.log("둘");
+            console.log("셋");
+         } );
+
+         useFunc(() =>{
+            console.log("호출됨!!");
+         })
+</script>
+
+
+</body>
+</html>

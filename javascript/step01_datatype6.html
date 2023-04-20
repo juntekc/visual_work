@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        width:100px;
+        height: 100px;
+        background-color: greenyellow;
+
+    }
+    </style>
+</head>
+<body>
+    <h1>js 데이터 type</h1>
+    <button onclick="pushElephant()">코끼리를 냉장고에 넣기</button>
+    <div class="box" onmouseleave="pushElephant()"></div> <!--마우스가 떠나면 콘솔이 실행됌.-->
+<script>
+//3개의 동작을 해야 코끼리가 들어감. 코끼리를 냉장고에 넣기.
+/*console.log("냉장고 문을 연다");
+console.log("코끼리를 집어넣는다 ");
+console.log("냉장고 문을 닫는다 ");*/
+//이러면 로딩 시점에 바로 들어가기때문에 다른 시점으로 바꿔줘야함.
+let pushElephant = function(){//펑션타입 데이터 
+console.log("냉장고 문을 연다");
+console.log("코끼리를 집어넣는다 ");
+console.log("냉장고 문을 닫는다 ")};
+//함수를 콜하는 방법: pushElephant() . 소괄호 붙힘.
+/*o.log("xxx"); 
+VM878:1 xxx
+undefined
+let a =console.log;
+u*/
+</script>
+</body>
+</html>

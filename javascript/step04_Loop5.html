@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<button onclick="prints()">출력하기</button>
+<br>
+    <script>
+
+
+let nums=[10,20,30,40,50];
+/*출력하기 버튼을 누르면 nums배열에 담긴 숫자가 출력되도록 프로그래밍해봐라
+배열이 갖고있는 foreach()함수를 갖고*/
+
+let print=()=>{
+    nums.forEach(function(item,index){
+        document.querySelectorAll("p")[index].innerText=item; 
+    })
+
+    document.write(number + "<br>")
+});
+
+
+forEach(function(item,index)){
+};
+function forEach(f){
+    f(10,0);
+    f(20,1);
+    f(30,2);
+    f(40,3);
+    f(50,4);
+}
+
+/*nums.forEach(function(item,index){
+    console.log(index +" : " + item);
+}))*/
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>양자택일의 조건부 블럭 구성하기</h1>
+    <p id="one"></p>
+    <p id="two"></p>
+<script>
+    let isMan=confirm("당신이 남성이면 확인을 누르고 여성이면 취소를 누르세요. ");//대화식으로 짓기
+
+//만일 남성이면 위의 p요소에 "당신은 남성이군요"를 출력하고 여성이면 p에 "당신은 여성이군요"를 출력하세요
+if(isMan){
+document.querySelector("#one").innerText="딩신은 남성이군요";    
+}else{ document.querySelector("#one").innerText="당신은 여성이군요"}
+
+//양자택일의 로직은 3항 연산자를 활용해서 해결할 수 도있다. 
+let  result = isman? "당신은 남성이군요": "당신은 여성이군요";
+document.querySelector("#two").innerText=result;//true면 콜론의 좌측, falase면 우측
+</script>
+</body>
+</html>

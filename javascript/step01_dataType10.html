@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>step06_dataType10.html</title>
+</head>
+<body>
+    <h1>자스 데이터 파입</h1>
+    <p>fucntion의 매게변수</p>
+
+<script>
+/*function(msg){
+
+}에서 msg는 매게변수이다. 
+함수에 전달되는 값을 전달받을 변수이며 let을 선언하지 않는다 .
+아래 소괄호 안의 매개변수는 해당함수안에서만 사용할수있다.
+*/
+//let printMsg=function(/*소괄호는 매게변수를 선언할 수있는 공간*/){
+//해당 함수안에만 사용할 수있는 msg매개변수를 선언한것.let은 못씀.
+//소괄호 안에 들어갈 함수는 call하는 시점에 타입,값이 정해짐.};
+let printMsg=function(msg){
+    //msg에 뭐가 전달될지 모르지만 아래와 같이 사용할거야!
+console.log("--------");
+console.log(msg);
+console.log("--------");
+
+};
+
+printMsg("hello");//을 하면 "hello"가 msg에 대입이 됌. 전달하게 되면 답은
+//let msg ="hello"가 됌 .
+printMsg("bye");
+    </script>
+</body>
+</html>

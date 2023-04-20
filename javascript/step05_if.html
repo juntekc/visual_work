@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>조건부로 실행되는 code 블럭 구성하기</h1>
+<p id="one"></p>
+<p id="two"></p>
+<script>
+let name=prompt("이름을 입력하세요! ");
+
+//만일 입력한 이름이 "김구라"이면 위의 p요소에 "주인님 반갑습니다."라고 출력되도록 프로그래밍해라.
+//우리는 무조건 이 code를 무조건 실행이 아닌 조건부 실행으로 바꾸고싶다. 
+//조건1 : name에 김구라가 있을때 2. name==김구라 비교연산의 결과가 true일떄
+
+
+
+if(name=="김구라"){
+    document.querySelector("#one").innerText="주인님 반갑습니다." ; 
+}
+//if (true false) // if에 true가 있으면 실행 ,false면 실행 안함. 
+//비교하는 code가 복잡한 경우에 따로 비교를 해서 결과를 얻어내서
+let isEqaul = name=="김구라";         //비교 연산자 먼저 계산. 
+//결과값을 if문 안에서 사용가능함.
+if(iseEqual){ 
+    document,querySelector("#two").innerText="주인님 반갑습니다.";
+}
+
+ 
+
+
+
+
+</script>
+
+
+</body>
+</html>

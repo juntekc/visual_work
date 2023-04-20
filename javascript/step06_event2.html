@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box{
+    width: 300px ;
+    height:300px;
+    border: 1px solid red;
+    background-color: yellow;
+    cursor: crosshair; /*십자가*/
+}
+
+    </style>
+</head>
+<body>
+    <h1>마우스 이벤트 처리하기</h1>
+    <div class="box"></div> 
+
+
+
+
+
+
+<script>
+document.querySelector(".box").addEventListener("mousemove",(event)=>{
+    //console.log("mousemove!"); offsetX:offsetY,target을 중점으로
+    console.log(event);
+    //발생한 이벤트에 대한 정보{}object안에 담겨서 callback함수의 매개변수로 전달이 된다.
+
+    //offsetX,offsetY는 div 안에서의 좌표 , pageX랑 pageY는 웹브라우저 안에서의 좌표
+    //screenX,screenY는 모니터 안에서의 좌표, traget은 이벤트가 일어난 좌표값
+    //이벤트가 일어난 곳의 상대좌표 얻어내기
+    let x=event.offsetX;
+    let y=event.offsetY;
+    //이벤트가 일어난 요소(div)의 innerText로 출력해보기
+    event.target.innerText="x:"+x+"y:"+y;//도형 상단에 좌표 표시됌.
+
+});
+</script>
+</body>
+</html>

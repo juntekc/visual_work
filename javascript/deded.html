@@ -7,22 +7,72 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>document obj사용해보기</h1>
-    <button onclick="change()">바꾸기</button>
-    <p id="one" onmouseover="change2()">p1</p>
-    <p>p2</p>
-    <p>p3</p>
-    <script>
-    let change=()=>{
-        document.querySelector("")
-        let good 
+  <div class="container">
+    <h1>회원가입 폼입니다.</h1>
+    <form action="signup.jsp">
+        <label for="email">이메일<input type="text" id="email" name="email"></label>
+            <br>
+            <fieldset>
+                <legend>성별 정보 선택</legend>
+                <label>
+                    <input type="radio" name="gender" value="man" checked>남자
+                </label>
+                <label >
+                    <input type="radio" name="gender" id="woman"> 여자
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>취미 정보 선택</legend>   
+                <label>
+                    <input type="checkbox" name="hobby" value="soccer">축구
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="baking">베이킹
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="piano">피아노
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="etc">기타
+                </label>
+             </fieldset>   
+             
+            
+                <label for="job id="job"></label>
+                <select name="job" id="job">
+                    <option value="">선택</option>
+                    <option value="programmer">프로그래머</option>
+                    <option value="doctor">의사</option>
+                    <option value="pianist">피아니스트</option>
+                    <option value="etc">기타</option>
+                </select>
+                <br>
+                <label for="lunch">점심선택</label>
+                <select name="lunch" id="lunch">
+                    <optgroup label="분식">
+                        <option>라면</option>
+                        <option>쫄면</option>
+                        <option>스낵면</option>
+                    </optgroup>
+                    <optgroup label="한식">
+                        <option>김치</option>
+                        <option>수육</option>
+                        <option>국수</option>
+                    </optgroup>
 
-    };
+                </select>
+                <br>
+                <label for="myfile">첨부파일</label>
+                <input type="file" id="myfile" name="myfile">
+                <br>
+                <label for="comment">하고 싶은 말</label>
+                <br>
+                <textarea name="comment" id="comment"></textarea>
+                <br>
+                <button type="submit">가입</button>
 
+    </form>
 
-
-
-
-</script>
+    </div>
 </body>
 </html>
